@@ -41,7 +41,7 @@ public class Renter {
             parking.addBay(space);
         }
 
-        pedestrianExits.stream().forEach(peIndex -> parking.getBays().stream().forEach(p -> p.setDistanceToExit(Integer.min(p.getDistanceToExit(), Math.abs(peIndex - p.getIndex())))));
+        pedestrianExits.stream().forEach(peIndex -> parking.getSpaces().stream().forEach(p -> p.setDistanceToExit(Integer.min(p.getDistanceToExit(), Math.abs(peIndex - p.getIndex())))));
 
         return parking;
     }
