@@ -57,6 +57,8 @@ public class Parking {
     }
 
 
+    public void addSpace(ParkingSpace space) {
+    }
 }
 
 
